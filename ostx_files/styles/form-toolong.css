@@ -78,7 +78,7 @@
 
                 .orderTypeButtonActive {
                     background: yellow !important;
-                    background-image: url(images/tick.png) !important;
+                    background-image: url(../images/tick.png) !important;
                     background-repeat: no-repeat !important;
                     background-position: center bottom !important;
                     border: 2px solid red;
@@ -114,7 +114,7 @@
                     padding: 0px;
                     font-family: Arial;
                     display: inline-block;
-                    background-image: url(./bgform.jpg);
+                    background-image: url(../images/bgform.jpg);
                     background-size: cover;
                     border-radius: 5px;
                 }

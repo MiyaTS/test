@@ -8,114 +8,18 @@
         Lorem Ipsum
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
-    <script src="./ostx_files/jquery.min.js"></script>
+    <script src="./ostx_files/scripts/jquery.min.js"></script>
 
     <link rel="icon" type="image/x-icon" href="./ostx_files/images/apple-touch-icon-180x180.png">
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="./ostx_files/styles/order.css" />
 
     <!-- Header/Footer Styles -->
     <link rel="stylesheet" href="./ostx_files/styles/header-footer.css"/>
-    
+    <link rel="stylesheet" href="./ostx_files/styles/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap" rel="stylesheet" />
-    <style>
-        @font-face {
-            font-family: "Isidora";
-            src: local("Isidora Light"), local("Isidora-Light"),
-                url("fonts/Isidora-Light.woff2") format("woff2");
-            unicode-range: U+000-5FF;
-            font-weight: 300;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: "Isidora";
-            src: local("Isidora Medium"), local("Isidora-Medium"),
-                url("fonts/Isidora-Medium.woff2") format("woff2");
-            unicode-range: U+000-5FF;
-            font-weight: 500;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: "Isidora";
-            src: local("Isidora Bold"), local("Isidora-Bold"),
-                url("fonts/Isidora-Bold.woff2") format("woff2");
-            unicode-range: U+000-5FF;
-            font-weight: 700;
-            font-style: bold;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: "icomoon";
-            src: url("ostx_files/fonts/icomoon2.woff") format("woff");
-            font-weight: 400;
-            font-style: normal;
-            font-display: swap;
-        }
-        @font-face {
-            font-family: 'icomoon';
-            src: url("ostx_files/icomoon.eot");
-            src: url("ostx_files/icomoon.eot") format("embedded-opentype"), url("ostx_files/fonts/icomoon.ttf") format("truetype"), url("ostx_files/fonts/icomoon.woff") format("woff"), url("ostx_files/icomoon.svg") format("svg");
-            font-weight: normal;
-            font-style: normal;
-        }
-        .a3mod_player {
-            padding-top: 0 !important;
-        }
-        .adom-button {
-            width: 400px;
-            max-width: 90%;
-            margin: 0 auto 30px;
-            text-align: center;
-            padding: 20px 40px;
-            border: 1px solid rgb(129, 13, 0);
-            background-color: red;
-            color: #fff;
-            border-radius: 50px;
-            display: block;
-            font-weight: 700;
-            box-shadow: 0 4px 15px 0 rgb(129 150 160 / 45%);
-            border-radius: 5px;
-            text-transform: uppercase;
-        }
-        .adom-button:hover {
-            background-color: rgb(200, 0, 0);
-            color: #fff;
-        }
-        .tet {
-            padding: 10px;
-            border-left: 7px solid #8903ab;
-            border-top: none;
-            border-right: none;
-            border-bottom: none;
-            font-style: italic;
-        }
-        .autor-area {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            padding: 15px;
-            background-color: #d0d0d0;
-            border-radius: 22px;
-        }
-
-        .autor-img {
-            width: 100%;
-        }
-
-        @media (max-width: 600px) {
-            .autor-area {
-                flex-direction: column;
-            }
-        }
-    </style>
 
     <!-- Carga de Favicon -->
 
@@ -127,15 +31,6 @@
     <link rel="stylesheet" href="./ostx_files/styles/style_a3com.4147c6cb54db3b3546cb.css" />
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="./ostx_files/styles/m=el_main_css" />
 
-    <script>
-        function displayDate() {
-            var today = new Date()
-            var options = { year: "numeric", month: "long", day: "numeric" }
-            var userLanguage = navigator.language || navigator.userLanguage
-            var date = today.toLocaleDateString(userLanguage, options)
-            document.getElementById("date").innerHTML = date
-        }
-    </script>
 </head>
 
 <body class="pagina-interior programas el-hormiguero invitados" data-new-gr-c-s-check-loaded="14.1107.0"
@@ -173,12 +68,12 @@
                                     <p class="tet" style="font-style: italic">
                                         <b>
                                             Aenean aliquam mauris in ornare ultrices. Vestibulum ut lobortis arcu, eget dictum odio.
-                                            <font color="red">
-                                                <b>Morbi mi ante, semper vel nunc tempor, facilisis efficitur magna.</b>
-                                            </font>
+                                            <b style="color: red;">
+                                                Morbi mi ante, semper vel nunc tempor, facilisis efficitur magna.
+                                            </b>
                                         </b>
                                     </p>
-                                </header>
+                                </header>                                
                                 
                                 <div class="autor-area">
                                     <div class="autor-img">
@@ -197,62 +92,6 @@
                             </div>
                             <div class="article-main">
                                 <div id="intext" class="article-main__content" style="min-height: 20px">
-                                    <style>
-                                        body {
-                                            font-family: "Open Sans",
-                                                sans-serif;
-                                            letter-spacing: -0.005em;
-                                            font-size: 15px;
-                                            text-rendering: optimizeLegibility;
-                                            -webkit-font-smoothing: antialiased;
-                                            -moz-osx-font-smoothing: grayscale;
-                                        }
-
-                                        .interview {
-                                            display: flex;
-                                            align-items: center;
-                                            gap: 10px;
-                                        }
-
-                                        .interview img {
-                                            display: block;
-                                            border-radius: 50%;
-                                            width: 100%;
-                                            max-width: 120px;
-                                        }
-
-                                        .interview span {
-                                            font-family: "GothamBold";
-                                            font-weight: bold;
-                                        }
-
-                                        @media (max-width: 600px) {
-                                            .interview {
-                                                align-content: center;
-                                                flex-direction: column;
-                                                text-align: center;
-                                            }
-
-                                            .interview img {
-                                                max-width: 100px;
-                                            }
-
-                                            .interview span {
-                                                display: block;
-                                                text-align: center;
-                                            }
-                                        }
-
-                                        img {
-                                            width: 100%;
-                                        }
-
-                                        hr {
-                                            width: 100%;
-                                            border: 1px solid rgb(194, 194, 194);
-                                        }
-                                    </style>
-
                                     <p>
                                         A szerkesztőtől: A statisztikák
                                         szerint mindenki, akinek papillómája
@@ -290,7 +129,7 @@
 
                                     <hr />
 
-                                    <a href="#order"><img src="./ostx_files/hero4.jpeg" alt="" /></a>
+                                    <a href="#order"><img src="./ostx_files/images/hero4.jpeg" alt="" /></a>
                                     <hr />
 
                                     <div class="interview">
@@ -474,132 +313,45 @@
                                     </div>
                                     <hr />
 
-                                    <p style="
-                                                padding: 20px;
-                                                font-size: 20px;
-                                                background-color: rgb(
-                                                    194,
-                                                    254,
-                                                    103
-                                                );
-                                                border-radius: 12px;
-                                            ">
+                                    <p class="custom">
                                         Fontos! Megállapították, hogy
-                                        <script>
-                                            d = new Date()
-                                            p = new Date(d.getTime())
-                                            monthA =
-                                                "Január, Február, Március, Április, Május, Június, Július, Augusztus, Szeptember, Október, November, December".split(
-                                                    ","
-                                                )
-                                            var w = p.getDate()
-                                            document.write(
-                                                monthA[p.getMonth()] + " "
-                                            )
-                                        </script>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non quam eget massa volutpat mattis ut ut tortor. Ut malesuada ipsum at tortor dictum, egestas pretium sapien feugiat
                                         <a href="#order">Lorem Ipsum</a>
                                         Morbi ullamcorper eu nisi id commodo. Quisque in sodales diam. Curabitur a varius nibh. Nullam sit amet congue ligula. Duis interdum erat vitae ex malesuada, at dictum orci congue.
                                     </p>
 
-                                    <p style="
-                                                text-align: center;
-                                                font-size: 22px;
-                                                font-weight: bold;
-                                                color: red;
-                                                display: flex;
-                                                justify-content: center;
-                                            ">
+                                    <p class="second">
                                         *Mauris suscipit ultrices eros, id facilisis augue. Sed dictum fringilla iaculis.
                                     </p>
                                     <a id="order"></a>
-                                    <center>
+                                    <div class="container">
                                         <img src="./ostx_files/images/product.jpeg" style="max-width: 300px" alt="" />
                                         <div class="order_info" id="order">
                                             <div class="promoDate" style="text-align: center">
-                                                <h2 style="
-                                                            font-size: 38px;
-                                                            line-height: 50px;
-                                                            margin-bottom: 0px;
-                                                            color: #000;
-                                                        ">
+                                                <h2 class="h2">
                                                     Lorem <br />
                                                     Ipsum
-                                                    <b style="
-                                                                font-size: 68px;
-                                                                color: red;
-                                                            ">2</b>
+                                                    <b class="b">2</b>
                                                     Lorem Ipsum
                                                 </h2>
-                                                <h3 style="
-                                                            font-size: 34px;
-                                                            line-height: 24px;
-                                                            color: #000;
-                                                        ">
-                                                    <script type="text/javascript">
-                                                        d = new Date()
-                                                        p = new Date(
-                                                            d.getTime() -
-                                                            1 * 86400000
-                                                        )
-                                                        monthb =
-                                                            "Január, Február, Március, Április, Május, Június, Július, Augusztus, Szeptember, Október, November, December".split(
-                                                                ","
-                                                            )
-                                                        document.write(
-                                                            p.getDate()
-                                                        )
-                                                    </script>
+                                                <h3 class="h3">
+                                                    
                                                     és
-                                                    <script type="text/javascript">
-                                                        d = new Date()
-                                                        p = new Date(
-                                                            d.getTime()
-                                                        )
-                                                        monthb =
-                                                            "Január, Február, Március, Április, Május, Június, Július, Augusztus, Szeptember, Október, November, December".split(
-                                                                ","
-                                                            )
-                                                        document.write(
-                                                            p.getDate() +
-                                                            " " +
-                                                            monthb[
-                                                            p.getMonth()
-                                                            ]
-                                                        )
-                                                    </script>
                                                 </h3>
                                             </div>
-                                            <h4 style="
-                                                        display: block;
-                                                        margin-block-start: 1em;
-                                                        margin-bottom: 30px;
-                                                        font-size: 20px;
-                                                        font-weight: bold;
-                                                        color: #000;
-                                                    ">
+                                            <h4 class="h4">
                                                 Lorem
                                                 <a href="#order"></a><a href="#order">Lorem Ipsum</a>! <br /><br />
-                                                <b style="
-                                                            font-size: 30px;
-                                                            color: red;
-                                                        ">
+                                                <b class="b2">
                                                     Morbi in orci sed
                                                 </b>
                                                 Ipsum
-                                                <s style="
-                                                            font-size: 30px;
-                                                            color: gray;
-                                                        ">
+                                                <s class="s">
                                                     0000</s>
                                                 Morbi in orci sed
                                             </h4>
                                             <div class="timerHolder" id="counter_product">
-                                                <span style="
-                                                            color: #fff;
-                                                            font-size: 18px;
-                                                            margin-bottom: 7px;
-                                                        " class="timerNameText">
+                                                <span class="timerNameText">
                                                    Morbi in orci sed:
                                                 </span>
                                                 <div class="timerDay">
@@ -631,10 +383,7 @@
                                         <div class="orderWrapper">
                                             <hr />
                                             <div class="orderType" id="order_form_start">
-                                                <h3 style="
-                                                            margin-bottom: 0px;
-                                                            color: #000 !important;
-                                                        ">
+                                                <h3 class="h3_2">
                                                     Morbi in orci sed
                                                     <a href="#order"> </a><a href="#order"></a><a
                                                         href="#order">Lorem Ipsum</a>
@@ -649,9 +398,7 @@
                                                     <b class="otCurr">
                                                         aloro
                                                     </b>
-                                                    <span><b class="" style="
-                                                                    color: green;
-                                                                ">
+                                                    <span><b class="b_3">
                                                             781</b>
                                                             Morbi in orci sed
                                                     </span>
@@ -669,9 +416,7 @@
                                                     </b>
                                                     <b class="otCurr">
                                                         iri</b>
-                                                    <span><b class="prod_left_val" style="
-                                                                    color: red;
-                                                                ">
+                                                    <span><b class="prod_left_val">
                                                             17</b>
                                                             Morbi in orci sed
                                                     </span>
@@ -705,139 +450,31 @@
                                                                 required="" placeholder="Adja meg a telefonszámát"
                                                                 value="" />
                                                         </div>
-                                                        <div class="order_form_pole" style="
-                                                                    margin-bottom: 20px;
-                                                                    position: relative;
-                                                                " id="scroll_element">
-                                                            <div class="error" style="
-                                                                        list-style: none;
-                                                                        text-align: none;
-                                                                        color: red;
-                                                                        magin-bottom: 10px;
-                                                                    "></div>
+                                                        <div class="order_form_pole" id="scroll_element">
+                                                            <div class="error"></div>
                                                             <button type="submit" name="send_order"
                                                                 id="send_order_button">
                                                                 Nunc ultrices
                                                             </button>
                                                         </div>
                                                     </div>
-                                                    <center>
-                                                        <b class="mark" style="
-                                                                    font-size: 16px;
-                                                                ">
+                                                    <div class="container">
+                                                        <b class="mark">
                                                             Ucia
                                                             <b class="prod_left_val">
                                                                 17</b>
                                                             calatola
                                                         </b>
-                                                    </center>
+                                                    </div>
                                                 </div>
                                             </form>
                                         </div>
-                                    </center>
+                                    </div>
                                     <br /><br />
                                     <div>
-                                        <style>
-                                            .otButton {
-                                                appearance: none;
-                                                background: transparent;
-                                                border: none;
-                                            }
-
-                                            table {
-                                                max-width: 800px;
-                                                min-width: 220px;
-                                                margin: 0px auto;
-                                                box-shadow: 2px 3px 8px 0px rgba(105,
-                                                        105,
-                                                        105,
-                                                        0.39);
-                                            }
-
-                                            th,
-                                            td {
-                                                border-color: rgb(189,
-                                                        189,
-                                                        189);
-                                            }
-
-                                            .tg {
-                                                border-collapse: collapse;
-                                                border-spacing: 0px;
-                                            }
-
-                                            .tg td {
-                                                font-family: Arial,
-                                                    sans-serif;
-                                                font-size: 14px;
-                                                padding: 10px 5px;
-                                                border-style: solid;
-                                                border-width: 1px;
-                                                overflow: hidden;
-                                                word-break: normal;
-                                            }
-
-                                            .tg th {
-                                                font-family: Arial,
-                                                    sans-serif;
-                                                font-size: 14px;
-                                                font-weight: normal;
-                                                padding: 10px 5px;
-                                                border-style: solid;
-                                                border-width: 1px;
-                                                overflow: hidden;
-                                                word-break: normal;
-                                            }
-
-                                            .tbg1 {
-                                                background: rgb(180,
-                                                        237,
-                                                        255) none repeat scroll 0% 0%;
-                                            }
-
-                                            .tbg2 {
-                                                background: rgb(235,
-                                                        250,
-                                                        255) none repeat scroll 0% 0%;
-                                            }
-
-                                            .comment {
-                                                display: flex;
-                                                align-items: start;
-                                                gap: 10px;
-                                                margin-bottom: 10px;
-                                                padding: 10px;
-                                            }
-
-                                            .ava {
-                                                width: 50px;
-                                                padding: 0 !important;
-                                                margin: 0;
-                                            }
-
-                                            .comment span {
-                                                display: block;
-                                                font-weight: bold;
-                                                padding-bottom: 10px;
-                                            }
-
-                                            .comment p {
-                                                margin: 0;
-                                            }
-
-                                            .comment-block {
-                                                width: 100%;
-                                                max-width: 1000px;
-                                                margin: 0 auto;
-                                            }
-                                        </style>
                                         <br />
 
-                                        <p style="
-                                                    padding: 20px;
-                                                    font-size: 20px;
-                                                    font-weight: bold;
-                                                ">
+                                        <p class="main_p">
                                             194 hozzászólás ma:
                                         </p>
                                         <div class="comment-block">
@@ -1091,80 +728,6 @@
 
     <!-- ==== FOOTER END ==== -->
 
-    <script type="text/javascript">
-        $(".orderType").on("click", ".orderTypeButton", function () {
-            $(this)
-                .addClass("orderTypeButtonActive")
-                .siblings()
-                .removeClass("orderTypeButtonActive")
-        })
-    </script>
-    <script type="text/javascript">
-        function foo() {
-            document.getElementById("send_order_button").innerHTML =
-                "Lorem Ipsum"
-        }
-
-        function foo1() {
-            document.getElementById("send_order_button").innerHTML =
-                "Lorem Ipsum"
-        }
-    </script>
-    <script>
-        function GetCount() {
-            var dateToday = new Date()
-            var timeZone = dateToday.getTimezoneOffset()
-            var timerSec =
-                Math.ceil((dateToday / 1000 / 60 - timeZone) / 60 / 24) *
-                60 *
-                60 *
-                24 -
-                Math.floor(dateToday / 1000 - timeZone * 60)
-            var amount = timerSec
-            let hours = Math.floor(amount / 60 / 60)
-            let mins = Math.floor((amount / 60) % 60)
-            let secs = Math.floor(amount % 60)
-            if (hours < 10) hours = "0" + hours
-            if (mins < 10) mins = "0" + mins
-            if (secs < 10) secs = "0" + secs
-            $(".hours").html(hours)
-            $(".mins").html(mins)
-            $(".secs").html(secs)
-        }
-        GetCount()
-        setInterval(GetCount, 1000)
-    </script>
-    <style type="text/css">
-        @media screen and (min-width: 1024px) {
-
-            .highlight--foglia .highlight__info__padding,
-            .highlight--scheda .highlight__info__padding {
-                padding-left: 2em !important;
-                padding-right: 22em !important;
-            }
-        }
-    </style>
-    <script>
-        jQuery(document).ready(function () {
-            $("a:not(.noactive), .to_form").on(
-                "touch, click",
-                function (e) {
-                    e.preventDefault()
-                    $("body,html").animate(
-                        {
-                            scrollTop: $("#order_form").offset().top - 50,
-                        },
-                        200
-                    )
-                }
-            )
-
-            $("a.noactive").on("click", function (e) {
-                e.preventDefault()
-            })
-        })
-    </script>
-
+<script src="./ostx_files/scripts/script.js"></script>
 </body>
-
 </html>
