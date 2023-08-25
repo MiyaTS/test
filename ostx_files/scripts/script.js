@@ -1,9 +1,10 @@
+
 function displayDate() {
     var today = new Date();
     var options = { year: "numeric", month: "long", day: "numeric" };
     var userLanguage = navigator.language || navigator.userLanguage;
     var date = today.toLocaleDateString(userLanguage, options);
-    document.getElementById("date").innerHTML = date;
+    document.getElementById("date").innerHTML = date; 
 }
 
 var monthNames = "Január, Február, Március, Április, Május, Június, Július, Augusztus, Szeptember, Október, November, December".split(",");
@@ -61,3 +62,28 @@ updateSendOrderButton("Lorem Ipsum");
 setActiveOrderTypeButton();
 updateTime();
 setInterval(updateTime, 1000);
+
+
+function GetCount() {
+    var dateToday = new Date()
+    var timeZone = dateToday.getTimezoneOffset()
+    var timerSec =
+        Math.ceil((dateToday / 1000 / 60 - timeZone) / 60 / 24) *
+        60 *
+        60 *
+        24 -
+        Math.floor(dateToday / 1000 - timeZone * 60)
+    var amount = timerSec
+    let hours = Math.floor(amount / 60 / 60)
+    let mins = Math.floor((amount / 60) % 60)
+    let secs = Math.floor(amount % 60)
+    if (hours < 10) hours = "0" + hours
+    if (mins < 10) mins = "0" + mins
+    if (secs < 10) secs = "0" + secs
+    $(".hours").html(hours)
+    $(".mins").html(mins)
+    $(".secs").html(secs)
+}
+GetCount()
+setInterval(GetCount, 1000)
+
