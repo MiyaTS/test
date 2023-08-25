@@ -1324,7 +1324,7 @@ header.header.header-home.cont-sticky .sticky-no-jump {
 }
 
 .header.header-home .main-header.is-sticky {
-    height: 40px
+    height: 40px;
 }
 
 .header.header-home .main-header.is-sticky>.container {
@@ -2271,8 +2271,8 @@ footer .footer-logo-container .logo {
 
 footer .footer-logo-container .logo a {
     position: absolute;
-    top: 0;
-    bottom: 0;
+    font-size: 30px;
+    color: white;
     left: 0;
     right: 0
 }
